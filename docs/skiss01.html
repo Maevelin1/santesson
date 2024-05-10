@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title> Santessons skor: skiss 1 </title>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/desktop.css">
+        <script src="functions.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Skiss 1</h1>
+        </header>
+        <nav id="sitenav"><a href="index.html">Hem</a> | <a href="projektet.html">Om projektet</a> |
+            <a href="skisser.html">Skisser</a> | <a href="filer.html">Filer</a> | </nav>
+        <main id="manuscript">
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <p>Här kan du titta närmare på skissens fram- och baksida. <br> För
+                            muspekaren över bilden för att zooma in ytterligare.</p>
+                    </div>
+                    <div class="column">
+                        <!--vill vi ha en tillbaka-knapp?-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>Framsida</h3>
+                        <div class="img-zoom-container">
+                            <img id="myimage-a" src="assets/img/documents/skiss_visning01a.jpg"
+                                class="img-full" alt="Girl">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="myresult-a" class="img-zoom-result"></div>
+                        <script>
+                            imageZoom("myimage-a", "myresult-a");</script>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h3>Baksida</h3>
+                        <div class="img-zoom-container">
+                            <img id="myimage-b" src="assets/img/documents/skiss_visning01b.jpg"
+                                class="img-full" alt="Girl">
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id="myresult-b" class="img-zoom-result"></div>
+                        <script>
+                            imageZoom("myimage-b", "myresult-b");</script>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
