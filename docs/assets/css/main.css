@@ -3,10 +3,12 @@
 body {
     padding: 1vw;
     font-family: 'Palatino', 'Palatino Linotype', 'Palatino LT STD', 'Book Antiqua', 'Georgia,serif';
-    line-height: 1.25;
-    font-size: 1vw;
+    line-height: 1.5;
+    font-size: 1.25vw;
     width: 100%;
 }
+
+
 
 h1,
 h2,
@@ -21,16 +23,13 @@ nav {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 1vw;
+    font-size: 1.5vw;
 }
 
-h2 {
+h1,
+h2,
+h3{
     padding: 1vw;
-}
-
-h3 {
-    font-weight: bold;
-    padding: 1vw;
-
 }
 
 #details {
@@ -42,8 +41,16 @@ h3 {
 footer {
     border-top: 1px solid black;
     padding-top: 1vw;
-    margin-top: 1vw;
+    margin-top: 1.5vw;
 }
+
+.text-special {
+    text-align: center;
+}
+
+/* .link {
+    color: #000000;
+} */
 
 .copyright {
     width: 50%;
@@ -71,19 +78,32 @@ footer {
 
 .thumbnail {
     margin: 5px;
-    border: 1px solid black;
-    /* width: 100px; */
+   /*  border: 1px solid black;  */
+    width: 250px; 
 }
 
 .img-full {
-    margin: 10px;
-    width: 550px;
+    margin: 5px;
+    width: 525px;
 }
 
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 1vw;
+    
+}
+
+/* .column-33 {
+    float: left;
+    width: 33.33%;
+    padding: 1vw;
+}  */
+
+.column-25{
+    float: left;
+    width: 25%;
+    padding: 1vw;
 }
 
 .row::after {
@@ -92,15 +112,42 @@ footer {
     display: table;
 }
 
+.button-back {
+  float: left;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  cursor: pointer;  
+}
+
+.button-next {
+ float: right;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  cursor: pointer;    
+}
+
+.button-default {
+  border-color: #e7e7e7;
+  color: black;
+}
+
+.button-default:hover {
+  background: #e7e7e7;
+}
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 1vw;
 }
 
 .gallery > li {
-    flex-basis: 240px; /* width: 350px; */
+    flex-basis: 240px; /* width: 240px; */
     list-style-type: none; /* to remove those automatic pesky list-dots */
 }
 
@@ -140,7 +187,7 @@ footer {
 }
 
 .img-zoom-result {
-  border: 1px solid #d4d4d4;
+  border: 1px solid #000000;
   /*set the size of the result div:*/
   width: 400px;
   height: 400px;
