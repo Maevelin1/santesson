@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <!-- TEI header med metadata för skisssamlingen i sin helhet.
+   Innehåller även en <listObject> där varje individuell skiss är listad med relevant information -->
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Santessons Skor: ett digitaliseringsprojekt</title>
+            <author>K D Santesson AB</author>
+            <meeting>Projektarbete Digitalisering för bevarande och tillgänglighet VT2024</meeting>
+            <respStmt>
+               <resp>Digitalisering och tillgängliggörande</resp>
+               <persName>Diana Witting</persName>
+               <persName>Katarina Löfberg</persName>
+               <persName>Maria Karlsson</persName>
+               <orgName>Högskolan i Borås</orgName>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <authority>Diana Witting</authority>
+            <authority>Katarina Löfberg</authority>
+            <authority>Maria Karlsson</authority>
+            <distributor>Högskolan i Borås</distributor>
+            <address>
+               <addrLine>Allégatan 1</addrLine>
+               <addrLine>503 32 Borås</addrLine>
+               <addrLine>Sverige</addrLine>
+            </address>
+            <availability>
+               <licence>Licensed with a <ref
+                     target="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
+                     Attibution</ref> licence.</licence>
+               <licence> Licenced with a <ref
+                     target="https://creativecommons.org/licenses/by-nc/4.0/"> Creative Commons
+                     Attribution </ref>licence. <p xml:id="repo"> Upphovsrätten till den fysiska
+                     samlingen innehas av Eslöfs Museiförening. Vid publicerig ska Eslöfs
+                     Museiförening alltid utsättas vid bilden. </p>
+               </licence>
+            </availability>
+            <date>Juni 2024</date>
+         </publicationStmt>
+         <!-- beskrivning av samlingen som helhet -->
+         <sourceDesc>
+            <bibl>En samling av 46 skisser med fram- och baksida av skomodeller från K.D. Santessons
+               skofabrik i Eslöf 1925 - 1956. Skisserna är huvudsakligen utförda med bläck och
+               blyerts på oblekt papper. I vissa skisser har andra färger och material använts för
+               att visa på skornas materialval. Skisserna är mellan 160 millimeter och 250
+               millimeter breda samt 150 millimeter och 350 millimeter höga. </bibl>
+
+
+            <!-- Nedan följer en lista över de 46 skisser som samlingen innehåller, 
+               här behandlade som objekt, i enlighet med TEI guidelines, då de ej har textbaserat innehåll.
+            (Tyvärr upprepande då de tillhör samma kollektion hos samma institution etc) -->
+
+            <listObject>
+               <object xml:id="skiss01">
+                  <!-- öka dennna för varje ny <object> -->
+                  <objectIdentifier>
+                     <!-- det enda som behöver ändras vid nytt <object> här är <objectName> (tips: klipp/klistra från info + metadata dokumentet) -->
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av blå damsko utförd på oblekt <material
+                           type="support">papper</material></objectName>
+                     <!-- "support" är materialet texten är skriven på, så i detta fallet bakgrundspappret -->
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Ljusblå modell med klack samt silverfärgade och mörkblå detaljer
+                        framtill på ovandelen. Skon är vänd åt höger. I nedre högra hörn finns
+                           <unclear>signatur</unclear>: oläslig. Pappret har små fläckar ovanför och
+                        till vänster om skon. Papprets dimensioner i millimeter: <width unit="mm"
+                           >162.0</width> x <height unit="mm">157.0</height>.</p>
+                     <!-- när det finns relevant beskrivning av baksida, gör en ny <p> med den infon
+                           (har dock skippat att lista måtten 2ggr) -->
+                  </physDesc>
+                  <additional>
+                     <!-- (ingen aning om detta är rätt, och det gäller för samtliga <additional>) 
+                     (men för att underlätta processen när ni lägger in resterande, ändra bara numret från ex 01 till 02 -->
+                     <surrogates facs="skiss_img01">
+                        <!-- det är denna jag är mest osäker på, vad som egentligen bör stå inom "" efter facs= -->
+                        <graphic xml:id="skiss_visning01a"
+                           url="assets/img/documents/skiss_visning01a.jpg"/>
+                        <graphic xml:id="skiss_visning01b"
+                           url="assets/img/documents/skiss_visning01b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail01a"
+                           url="assets/img/documents/skiss_thumbnail01a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss02">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av blå damsko med utskärning utförd på oblekt
+                           <material type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Ljusblå modell med klack och utskuren detalj på skons ovandel.
+                        Laxrosa dekorationssömmar på ovandel och längs kanten. Skon är vänd åt höger
+                        och det finns ett horisontellt laxrosa streck på pappret bakom skon. I nedre
+                        högra hörn finns <unclear>signatur</unclear>: oläslig. Papprets dimensioner
+                        i millimeter: <width unit="mm">168.0</width> x <height unit="mm"
+                           >156.0</height>.</p>
+                     <p>Baksida. Pappret har skada i kanten på övre högra hörn och en utskuren
+                        detalj i mitten.</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img02">
+                        <graphic xml:id="skiss_visning02a"
+                           url="assets/img/documents/skiss_visning02a.jpg"/>
+                        <graphic xml:id="skiss_visning02b"
+                           url="assets/img/documents/skiss_visning02b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail02a"
+                           url="assets/img/documents/skiss_thumbnail02a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss03">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av gul damsko utförd på oblekt <material
+                           type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Gul modell med klack och laxrosa detaljer samt silverfärgade
+                        dekorationssömmar på tåkappa. Skon är vänd åt vänster och under skon finns
+                        tre skuggor i blyerts. I nedre högra hörn finns <unclear>signatur</unclear>:
+                        oläslig. Papprets dimensioner i millimeter: <width unit="mm">166.0</width> x
+                           <height unit="mm">153.0</height>.</p>
+                     <p>Baksida. Pappret har två mindre skador i övre vänstra hörn samt tre små
+                        bruna fläckar i mitten av högra sidan.</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img03">
+                        <graphic xml:id="skiss_visning03a"
+                           url="assets/img/documents/skiss_visning03a.jpg"/>
+                        <graphic xml:id="skiss_visning03b"
+                           url="assets/img/documents/skiss_visning03b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail03a"
+                           url="assets/img/documents/skiss_thumbnail03a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss04">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av svart damsko utförd i bläck limmad på oblekt
+                           <material type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Svart modell med klack och hålmönster på ovandel längs med kanten.
+                        Utförd i svart bläck samt utskuren och limmad på oblekt <material
+                           type="support">papper</material>. Skon är vänd åt vänster. Små spår efter
+                        limrester runt sko och i hålmönster samt tunna repor i bläcket framtill på
+                        sko. Pappret har spår efter vikingar i övre vänstra hörn. I nedre högra hörn
+                        finns <unclear>signatur</unclear>: oläslig. Små hål i vardera fyra hörn.
+                        Papprets dimensioner i millimeter: <width unit="mm">236.0</width> x <height
+                           unit="mm">180.0</height>.</p>
+                     <p>Baksida. Pappret har <material>häftmassa</material> i övre två hörn samt
+                        skada efter vikning i övre högra hörn.</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img04">
+                        <graphic xml:id="skiss_visning04a"
+                           url="assets/img/documents/skiss_visning04a.jpg"/>
+                        <graphic xml:id="skiss_visning04b"
+                           url="assets/img/documents/skiss_visning04b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail04a"
+                           url="assets/img/documents/skiss_thumbnail04a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss05">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av blå damsko i <material>sammet</material> limmad på
+                        beige struktur<material type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Enfärgad modell utskuren i blått
+                        <material>sammet</material>spapper som limmats på beige struktur<material
+                           type="support">papper</material>. Modell med klack samt slejf och detalj
+                        av svart <material>läder</material>liknande material på ovandel, spänne av
+                           <material>metall</material> och vita dekorationssömmar ovanför slejf.
+                        <!-- är spännet i metall på sissen? 
+                              här i taggningen tror jag det blir exta viktigt att särskilja materialen som skissen är gjord av från det material det ska föreställa -->
+                        Skon är vänd åt vänster. Papprets dimensioner i millimeter: <width unit="mm"
+                           >243.0</width> x <height unit="mm">157.0</height>.</p>
+                     <p>Baksida. Pappret har <material>häftmassa</material> i övre två hörnen. I
+                        övre vänstra hörn är textat: "<q>447</q>”. Första siffran är delvis dold
+                        bakom häftmassan. Pappret har två mörkare fläckar i mitten.</p>
+                     <!-- obs, jag är inte helt hundra på <q> som tag här -->
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img05">
+                        <graphic xml:id="skiss_visning05a"
+                           url="assets/img/documents/skiss_visning05a.jpg"/>
+                        <graphic xml:id="skiss_visning05b"
+                           url="assets/img/documents/skiss_visning05b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail05a"
+                           url="assets/img/documents/skiss_thumbnail05a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss06">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av prickmönstrad damsko med spänne i strass utförd i
+                        blyerts på oblekt <material type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Prickmönstrad modell med klack samt svängda dekorationssömmar och
+                        spänne i strass. Skon är vänd åt vänster och det finns fyra skuggor i
+                        blyerts under skon. I nedre högra hörn finns <unclear>signatur</unclear>:
+                        oläslig. Papprets dimensioner i millimeter: <width unit="mm">228.0</width> x
+                           <height unit="mm">169.0</height>.</p>
+                     <p>Baksida. Pappret har ett hål i vardera hörn.</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img06">
+                        <graphic xml:id="skiss_visning06a"
+                           url="assets/img/documents/skiss_visning06a.jpg"/>
+                        <graphic xml:id="skiss_visning06b"
+                           url="assets/img/documents/skiss_visning06b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail06a"
+                           url="assets/img/documents/skiss_thumbnail06a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss07">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss II 1960 av damsko med slejf och knapp utförd i
+                        blyerts och bläck på oblekt <material type="support"
+                        >papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Enfärgad modell i ljus färg med klack samt slejf med knapp. Med
+                        mörkare mönstrat dekorationsband längs kanten i form av löst tvinnad fläta.
+                        Skon är vänd åt höger. Det finns ett horisontellt streck i blyerts. I övre
+                        vänstra hörnet är textat: “<q>skiss II</q>”, <unclear>oläsligt</unclear>,
+                           “<q>1960</q>”. Vid sidan av klacken finns <unclear>signatur</unclear>:
+                        oläslig. Pappret har ett hål i vardera hörn samt horisontell skada i nedre
+                        högra hörn. Pappret har brunt märke efter gem i mitten nedtill och en liten
+                        brun prick upptill på höger sida. Papprets dimensioner i millimeter: <width
+                           unit="mm">256.0</width> x <height unit="mm">179.0</height>.</p>
+                     <p>Baksida. Pappret har ett hål i vardera hörn samt horisontell skada i nedre
+                        vänstra hörn. Pappret har brunt märke efter gem nedtill i mitten. Papprets
+                        dimensioner i millimeter</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img07">
+                        <graphic xml:id="skiss_visning07a"
+                           url="assets/img/documents/skiss_visning07a.jpg"/>
+                        <graphic xml:id="skiss_visning07b"
+                           url="assets/img/documents/skiss_visning07b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail07a"
+                           url="assets/img/documents/skiss_thumbnail07a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss08">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av ljus damsko med delar av spets utförd i blyerts
+                        och bläck på oblekt <material type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Ljus modell med klack och tre delar av mörkare spets, framtill, i
+                        mitten och baktill. Slejf med knapp. Skon är vänd åt vänster och det finns
+                        fyra skuggor med blyerts under skon. I mitten upptill är textat med romersk
+                        siffra: "<q>I</q>”. I nedre högra hörnet finns <unclear>signatur</unclear>:
+                        oläslig. Pappret har ett hål i vardera hörn. Papprets dimensioner i
+                        millimeter: <width unit="mm">243.0</width> x <height unit="mm"
+                           >161.0</height>.</p>
+                     <p>Baksida. Pappret har ett hål i vardera hörn samt sex spridda
+                        blyertsstreck.</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img08">
+                        <graphic xml:id="skiss_visning08a"
+                           url="assets/img/documents/skiss_visning08a.jpg"/>
+                        <graphic xml:id="skiss_visning08b"
+                           url="assets/img/documents/skiss_visning08b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail08a"
+                           url="assets/img/documents/skiss_thumbnail08a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss09">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss III av damsko med snörning och prickmönster utförd i
+                        blyerts på oblekt <material type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Modell med ljus färg och klack, samt prickmönster på klack,
+                        hälkappa och vid snörning. Tre hål för snörning på ovandelen. Skon är vänd
+                        åt höger och i mitten upptill är textat med romerska siffror: "<q>III</q>”.
+                        Pappret har ett hål i vardera hörn. Papprets dimensioner i millimeter:
+                           <width unit="mm">249.0</width> x <height unit="mm">162.0</height>.</p>
+                     <p>Baksida. Pappret har ett hål i vardera hörn samt svag missfärgning i övre
+                        högra kanten.</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img09">
+                        <graphic xml:id="skiss_visning09a"
+                           url="assets/img/documents/skiss_visning09a.jpg"/>
+                        <graphic xml:id="skiss_visning09b"
+                           url="assets/img/documents/skiss_visning09b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail09a"
+                           url="assets/img/documents/skiss_thumbnail09a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <object xml:id="skiss10">
+                  <objectIdentifier>
+                     <country>Sverige</country>
+                     <region>Skåne</region>
+                     <settlement>Eslöv</settlement>
+                     <institution>Eslöfs museiförening</institution>
+                     <repository>Eslövs stadsmuseum</repository>
+                     <collection>Santessons Skor</collection>
+                     <objectName>Modell, skiss av damsko med snirklande dekoration utförd i blyerts
+                        på oblekt <material type="support">papper</material></objectName>
+                  </objectIdentifier>
+                  <physDesc>
+                     <p>Framsida. Tvåfärgad modell med klack. Mörk klack och hälkappa som övergår
+                        med snirklande dekoration och prickar vid avsmalnande partier och längs med
+                        kanten till ljus ovandel. Skon är vänd åt vänster och i nedre högra hörn
+                        finns <unclear>signatur</unclear>: oläslig. Pappret har ett hål i vardera
+                        hörn. Pappret har svag missfärgning i nedre vänstra hörn samt en mindre
+                        prick till höger om skon. Papprets dimensioner i millimeter: <width
+                           unit="mm">188.0</width> x <height unit="mm">259.0</height>.</p>
+                     <p>Baksida. Pappret har ett hål i vardera hörn samt mörkgrå fläck i mitten av
+                        högra kanten. Pappret har svag missfärgning i nedre högra hörn.</p>
+                  </physDesc>
+                  <additional>
+                     <surrogates facs="skiss_img10">
+                        <graphic xml:id="skiss_visning10a"
+                           url="assets/img/documents/skiss_visning10a.jpg"/>
+                        <graphic xml:id="skiss_visning10b"
+                           url="assets/img/documents/skiss_visning10b.jpg"/>
+                        <graphic xml:id="skiss_thumbnail10a"
+                           url="assets/img/documents/skiss_thumbnail10a.jpg"/>
+                     </surrogates>
+                  </additional>
+               </object>
+
+               <!-- nästa <object> -->
+
+            </listObject>
+         </sourceDesc>
+      </fileDesc>
+
+      <!-- nedan, tillbaka till information gällande hela samlingen -->
+      <encodingDesc>
+         <projectDesc>
+            <p>Detta digitaliseringsprojekt har genomförts inom delkursen Digitalisering för
+               bevarande och tillgänglighet vid Högskolan i Borås vårterminen 2024. </p>
+
+            <p>Digitaliseringsprojektet har genomförts i samarbete med Eslövs stadsmuseum i syfte
+               att komplettera museets permanenta fysika utställning om K. D. Santessons skofabrik.
+               Skisserna visar modet under skofabrikens storhetstid och är av kulturhistoriskt
+               intresse. Utmärkelsen Kunglig hovleverantör visar på skotillverkningens betydelse för
+               Eslövsbygdens industriella kulturarv. Syftet har även varit att bevara,
+               tillgängliggöra och sprida materialet till alla som kan ha intresse av det. </p>
+         </projectDesc>
+         <editorialDecl>
+            <p>I det fall det förkommer text eller signatur som inte kunnat tydas med säkerhet har
+               texten angetts som oläslig. </p>
+            <p>I beskrivningarna av skomodellerna har begrepp som förekommer i andra digitaliserade
+               samlingar använts. Vid uppmärkning har syftet varit att öka materialets sökbarhet. </p>
+
+         </editorialDecl>
+      </encodingDesc>
+
+      <profileDesc>
+
+
+
+         <textClass>
+            <!-- nyceklord relevanta för samlingen i sin helhet -->
+            <keywords>
+               <list>
+                  <item>skotillverkning </item>
+                  <item>skisser </item>
+
+               </list>
+
+            </keywords>
+
+         </textClass>
+
+         <langUsage>
+            <language ident="svenska"/>
+         </langUsage>
+      </profileDesc>
+
+   </teiHeader>
+   <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+   </text>
+</TEI>
