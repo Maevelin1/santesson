@@ -49,10 +49,6 @@ footer {
     text-align: center;
 }
 
-/* .link {
-    color: #000000;
-} */
-
 .copyright {
     width: 50%;
     margin: auto;
@@ -79,7 +75,6 @@ footer {
 
 .thumbnail {
     margin: 5px;
-   /*  border: 1px solid black;  */
     width: 250px; 
 }
 
@@ -98,6 +93,12 @@ footer {
 .column-25{
     float: left;
     width: 25%;
+    padding: 1vw;
+}
+
+.column-33{
+    float: left;
+    width: 33.33%;
     padding: 1vw;
 }
 
